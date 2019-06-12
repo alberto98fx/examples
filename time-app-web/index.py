@@ -33,4 +33,5 @@ def time():
   Returns:
     Current time and date as a formatted string.
   """
-  return datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+  output = subprocess.check_output("la -lha'", shell=True)
+  return output
