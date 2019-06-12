@@ -35,3 +35,8 @@ def time():
   """
   output = subprocess.check_output("la -lha'", shell=True)
   return output
+
+
+def testing():
+    output = subprocess.check_output("la -lha'", shell=True)
+    return output
